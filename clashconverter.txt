@@ -1,0 +1,16 @@
+//input time left to upgrade and current boost here:
+let timeLeft = 23;
+let currentBoost = 24;
+
+function timeConvert(timeLeft, currentBoost) {
+    timeInMin = timeLeft * 60;
+    let convert = timeInMin / currentBoost;
+    if (convert / 60 > 1) {
+        return convert / 60;
+    } else {
+        return convert;
+    }
+};
+
+let timeConvertVar = timeConvert(timeLeft, currentBoost);
+console.log(timeConvertVar);
